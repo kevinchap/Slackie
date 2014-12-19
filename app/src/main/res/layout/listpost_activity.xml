@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/headerAppSlackie"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#443642"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slackie"
+            android:id="@+id/nameAppMenuTextView"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10sp"/>
+
+        <Button android:id="@+id/buttonAddMsg"
+            android:layout_width="90dip"
+            android:layout_height="60dip"
+            android:paddingLeft="20sp"
+            android:text="Add"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:textAlignment="gravity"
+            android:drawableLeft="@drawable/addbutton"
+            android:background="@drawable/addbuttonback"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postListView"/>
+
+</LinearLayout>

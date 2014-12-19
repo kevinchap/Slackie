@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerAppSlackieEdit"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#443642"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:text="Edit a message"
+            android:id="@+id/nameAppMenuTextViewEdit"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10sp"
+            android:gravity="left|center_vertical"
+            android:textAlignment="gravity"/>
+
+        <Button android:id="@+id/buttonCloseEdit"
+            android:layout_width="90dip"
+            android:layout_height="60dip"
+            android:paddingLeft="20sp"
+            android:text="Close"
+            android:background="#443642"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:textAlignment="gravity"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="closeEditHandler"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/papaEdit"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20sp"
+        android:paddingTop="20sp"
+        android:paddingRight="15sp"
+        android:paddingLeft="15sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:id="@+id/titleEditNamePost"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#999699"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleInputEditName"
+            android:layout_below="@+id/titleEditNamePost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#443642"
+            android:textSize="20sp"
+            android:layout_marginBottom="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESSAGE"
+            android:id="@+id/labelEditMsgPost"
+            android:layout_below="@+id/titleInputEditName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#999699"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/inputEditMsgPost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/labelEditMsgPost"
+            android:textColor="#443642"
+            android:textSize="20sp"
+            android:layout_marginBottom="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Channel"
+            android:id="@+id/labelEditChannelPost"
+            android:layout_below="@+id/inputEditMsgPost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#999699"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/inputEditChannelPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelEditChannelPost"
+            android:textColor="#443642"
+            android:textSize="20sp"
+            android:layout_marginBottom="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOT"
+            android:id="@+id/botEditLabelName"
+            android:layout_below="@+id/inputEditChannelPost"
+            android:textColor="#999699"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botEditInputName"
+            android:layout_below="@+id/botEditLabelName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#443642"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/buttonEditPost"
+        android:layout_alignParentBottom="true"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="#439fe0"
+        android:paddingBottom="15sp"
+        android:paddingTop="15sp"
+        android:layout_marginTop="-64sp"
+        android:drawableRight="@drawable/savebutton"
+        android:paddingRight="140sp"
+        android:gravity="right"
+        android:textAlignment="gravity"/>
+
+</LinearLayout>

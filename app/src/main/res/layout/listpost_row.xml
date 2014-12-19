@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/papa"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/listView"
+    android:longClickable="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/itemView"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingBottom="20sp"
+        android:paddingTop="16sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrived at Hetic"
+            android:id="@+id/titlePostTextView"
+            android:textColor="#443642"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi boys. I&apos;m Tina. Hey Jimmy Jr. Did you ..."
+            android:id="@+id/msgPostTextView"
+            android:textColor="#443642"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="will be posted in \#random"
+            android:id="@+id/channelPostTextView"
+            android:layout_gravity="left"
+            android:textColor="#999699"
+            android:textSize="17sp"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp">
+
+            <Button android:id="@+id/buttonSendSlackPost"
+                android:layout_width="90dip"
+                android:layout_height="30dip"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="Post"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center|center_vertical"
+                android:textAlignment="gravity"
+                android:drawableLeft="@drawable/iconbuttonpost"
+                android:background="@drawable/backbuttonpost"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:onClick="sendPostHandler"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bot"
+                android:id="@+id/titleBotText"
+                android:textColor="#443642"
+                android:textSize="12sp"
+                android:layout_centerInParent="true"/>
+
+            <Button android:id="@+id/buttonEditSlackPost"
+                android:layout_width="90dip"
+                android:layout_height="30dip"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Edit"
+                android:textSize="14sp"
+                android:textColor="#999699"
+                android:gravity="center|center_vertical"
+                android:textAlignment="gravity"
+                android:drawableLeft="@drawable/editbutton"
+                android:background="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:onClick="editPostHandler"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

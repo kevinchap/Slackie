@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_valid"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="22dp"
+    android:paddingBottom="22dp"
+    android:background="#2ab27b"
+    android:layout_alignParentBottom="true">
+
+    <TextView android:id="@+id/text_validsend"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#FFF"
+        android:text="Message posted !"
+        android:paddingLeft="100sp"
+        android:drawableLeft="@drawable/messageposted"
+        android:gravity="left"
+        android:textAlignment="gravity"/>
+
+</LinearLayout>

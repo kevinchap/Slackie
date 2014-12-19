@@ -1,4 +1,4 @@
-package fr.kevinchapron.slackie;
+package fr.kevinchapron.Slackie;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
