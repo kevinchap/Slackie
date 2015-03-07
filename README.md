@@ -1,6 +1,6 @@
 Slackie
 =======
 
-Slackie est un projet étudiant. 
-Plus précisément, il s'agit d'un projet android qui utilise l'api de Slack. 
-Il permet la création de courts messages destinés à être envoyé régulièrement sur un channel.
+Slackie is a student project.
+More specifically, it is an android project that uses the API Slack.
+It allows the creation of short messages to be sent regularly on a channel.
